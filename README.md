@@ -17,3 +17,15 @@ Este repositório contém os materiais referentes ao Trabalho de Implementação
 | Isaque Esdras         | Implementador do código              |
 | Jeferson Brasil       | Implementador do código              |
 | Maria Luiz            | Analista de Think Aloud              |
+
+## 📄 Entregas Obrigatórias
+
+- ✅ Documento PDF com:
+  - Capa com título, nomes, matrículas (no PDF) e papéis dos participantes
+  - Resultados dos seguintes tópicos:
+    - TDD e cobertura de testes
+    - Relatório do experimento *Think Aloud*
+    - Testes estáticos
+    - Métricas estatísticas
+- ✅ Código fonte zipado (`codigo.zip`)
+- ✅ Testes zipados (`testes.zip`)
