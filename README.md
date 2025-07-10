@@ -11,7 +11,7 @@ Nosso projeto consiste na implementação do algoritmo A* para encontrar o camin
 
 ## 👥 Equipe
 
-| Nome Completo         | Papel no Projeto                     |
+| Nome          | Papel no Projeto                     |
 |-----------------------|--------------------------------------|
 | Rafael Alencar        | Criador e executor de testes TDD     |
 | Guilherme Jose        | Criador e executor de testes TDD     |
