@@ -5,7 +5,9 @@
 
 ## 📋 Descrição
 
-Este repositório contém os materiais referentes ao Trabalho de Implementação para compor a Nota 1 da disciplina de Inteligência Artificial. O trabalho foi desenvolvido por uma equipe de 6 integrantes, conforme exigido, com papéis claramente definidos e não acumuláveis entre os membros.
+**Implementação do Algoritmo A\* para Busca da Menor Distância entre Cidades**
+
+Nosso projeto consiste na implementação do algoritmo A* para encontrar o caminho mais curto entre cidades, utilizando heurísticas para otimizar a busca. Além disso, exploramos um desafio extra: considerar o uso de informações reais de distâncias ou a possibilidade de processar imagens do Google Maps para gerar o grafo com distâncias automaticamente.
 
 ## 👥 Equipe
 
