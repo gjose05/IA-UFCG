@@ -1,6 +1,6 @@
 # Trabalho de Implementação – Nota 1  
 **Disciplina:** Inteligência Artificial (IA)  
-**Professor:** Eanes
+**Professor:** Eanes  
 **Data de Entrega:** 17 de julho de 2025, até meia-noite  
 
 ## 📋 Descrição
@@ -15,7 +15,7 @@ Nosso projeto consiste na implementação do algoritmo A* para encontrar o camin
 |-----------------------|--------------------------------------|
 | Rafael Alencar        | Criador e executor de testes TDD     |
 | Guilherme Jose        | Criador e executor de testes TDD     |
-| Arthur Fernandes      | Implementador do código              |
+| Arthur Fernandes      | Criador e executor de testes TDD     |
 | Isaque Esdras         | Implementador do código              |
 | Jeferson Brasil       | Implementador do código              |
 | Maria Luiz            | Analista de Think Aloud              |
