@@ -1,3 +1,9 @@
+# enviroments
 venv/
 env/
 enviroment/
+
+# cache
+.pytest_cache/
+src/__pycache__
+src/util/__pycache__
