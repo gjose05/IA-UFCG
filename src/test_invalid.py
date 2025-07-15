@@ -1,8 +1,8 @@
 import pytest
 import networkx as nx
-from astar import a_star
+from astar import astar
 
 def test_grafo_vazio():
     G = nx.Graph()
     with pytest.raises(ValueError):
-        a_star(G, 'A', 'B')
+        astar(G, 'A', 'B')
