@@ -41,13 +41,13 @@ def astar(grafo: nx.Graph, inicio, objetivo, heuristica=None, weight='weight') -
         for vizinho in grafo.neighbors(atual):
             custo_aresta = grafo[atual][vizinho].get(weight, 1)
             if custo_aresta is None:
-                return None
+                continue
 
             novo_g = g_atual + custo_aresta
 
             h = heuristica(vizinho, objetivo)
             if h is None:
-                return None
+                continue
 
             f = novo_g + h
             heapq.heappush(fila_prioridade, (f, novo_g, caminho + [vizinho]))

@@ -1,3 +1,6 @@
+"""
+    Função para calcular a distância euclidiana entre dois nós em um grafo.
+"""
 from networkx import DiGraph
 
 def distancia_euclidiana(n1, n2, grafo: DiGraph) -> float:
