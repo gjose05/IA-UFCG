@@ -43,7 +43,6 @@ def test_patos_campina():
     'Juazeirinho': (-7.07, -36.58),
     'Soledade': (-7.06, -36.37),
     'Areia de Baraúnas': (-7.12, -36.95),
-    'Quixabá': (-7.03, -37.15),
     }
 
     grafo = nx.DiGraph()
@@ -56,13 +55,12 @@ def test_patos_campina():
     grafo.add_edge("Juazeirinho","Soledade", weight= 25)
     grafo.add_edge("Soledade","Campina Grande", weight= 58)
     grafo.add_edge("Areia de Baraúnas","Juazeirinho", weight= 44)
-    grafo.add_edge("Quixabá","Areia de Baraúnas", weight= 33)
-    grafo.add_edge("Patos","Quixabá", weight= 15)
+    grafo.add_edge("Patos","Areia de Baraúnas", weight= 48)
 
     heuristica = lambda u,v: distancia_euclidiana(u,v,grafo)
 
     path = astar(grafo,"Patos","Campina Grande", heuristica= heuristica)
-    assert path == ["Patos","Quixabá","Areia de Baraúnas","Juazeirinho","Soledade","Campina Grande"]
+    assert path == ["Patos","Areia de Baraúnas","Juazeirinho","Soledade","Campina Grande"]
 
 def test_cajazeiras_natal():
     """
