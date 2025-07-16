@@ -34,7 +34,7 @@ def test_jp_natal():
 
 def test_patos_campina():
     """
-    Teste com dois caminhos diferentes
+    Teste com dois caminhos diferentes para um percurso de Patos até Campina Grande
     """
     coordenadas = {
     'Patos': (-7.03, -37.28),
@@ -62,6 +62,40 @@ def test_patos_campina():
     heuristica = lambda u,v: distancia_euclidiana(u,v,grafo)
 
     path = astar(grafo,"Patos","Campina Grande", heuristica= heuristica)
-    assert path == ["Patos", "Quixabá","Areia de Baraúnas", "Juazeirinho", "Soledade", "Campina Grande"]
+    assert path == ["Patos","Quixabá","Areia de Baraúnas","Juazeirinho","Soledade","Campina Grande"]
 
+def test_cajazeiras_natal():
+    """
+    Teste com três caminhos diferentes para um percurso de Cajazeiras até Natal
+    """
+    coordenadas = {
+    'Patos': (-7.03, -37.28),
+    'Campina Grande': (-7.22, -35.89),
+    'Cajazeiras': (-6.89, -38.46),
+    'João Pessoa': (-7.12, -34.86),
+    'Natal': (-5.79, -35.21),
+    'São Bento': (-6.49, -37.37),
+    'Santa Cruz': (-6.22, -35.90),  # Santa Cruz no RN
+    'Catolé do Rocha': (-6.34, -37.69),
+    'Mossoró': (-5.20, -37.24),
+    }
 
+    grafo = nx.DiGraph()
+
+    for cidade,pos in coordenadas.items():
+        grafo.add_node(cidade, pos=pos)
+
+    grafo.add_edge("Cajazeiras","Patos", weight= 170)
+    grafo.add_edge("Patos","Campina Grande", weight= 177)
+    grafo.add_edge("Campina Grande","João Pessoa", weight= 126)
+    grafo.add_edge("João Pessoa","Natal", weight= 181)
+    grafo.add_edge("Cajazeiras","São Bento", weight= 160)
+    grafo.add_edge("São Bento","Santa Cruz", weight= 212)
+    grafo.add_edge("Santa Cruz","Natal", weight= 122)
+    grafo.add_edge("Cajazeiras","Catolé do Rocha", weight= 138)
+    grafo.add_edge("Catolé do Rocha","Mossoró", weight= 152)
+    grafo.add_edge("Mossoró","Natal", weight= 280)
+
+    heuristica = lambda u,v: distancia_euclidiana(u,v,grafo)
+    path = astar(grafo,"Cajazeiras","Natal", heuristica= heuristica)
+    assert path == ["Cajazeiras", "São Bento", "Santa Cruz", "Natal"]
