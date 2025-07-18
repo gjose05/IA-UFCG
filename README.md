@@ -18,7 +18,7 @@ Nosso projeto consiste na implementação do algoritmo A* para encontrar o camin
 | Arthur Fernandes      | Criador e executor de testes TDD     |
 | Isaque Esdras         | Implementador do código              |
 | Jeferson Brasil       | Implementador do código              |
-| Maria Luiz            | Analista de Think Aloud              |
+| Maria Luiza            | Analista de Think Aloud              |
 
 ## 📄 Entregas Obrigatórias
 
