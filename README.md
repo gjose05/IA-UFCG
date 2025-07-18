@@ -13,12 +13,12 @@ Nosso projeto consiste na implementação do algoritmo A* para encontrar o camin
 
 | Nome          | Papel no Projeto                     |
 |-----------------------|--------------------------------------|
-| Rafael Alencar        | Criador e executor de testes TDD     |
+| Rafael Alencar        | Implementador do código              |
 | Guilherme Jose        | Criador e executor de testes TDD     |
 | Arthur Fernandes      | Criador e executor de testes TDD     |
 | Isaque Esdras         | Implementador do código              |
-| Jeferson Brasil       | Implementador do código              |
-| Maria Luiza            | Analista de Think Aloud              |
+| Jeferson Brasil       | Analista de Think Aloud              |
+| Maria Luiza           | Analista de Think Aloud              |
 
 ## 📄 Entregas Obrigatórias
 
